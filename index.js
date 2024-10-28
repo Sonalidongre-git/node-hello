@@ -10,7 +10,3 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
 });
-app.use((req, res, next) => {
-    console.log(`Request Method: ${req.method}, URL: ${req.url}, Client IP: ${req.ip}`);
-    next();
-});
